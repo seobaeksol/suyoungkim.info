@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, ReactElement } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -6,6 +6,7 @@ const ImageSlider: React.FunctionComponent<{ imgSources: Array<string> }> = ({
   imgSources
 }) => {
   const [imgIndex, setImgIndex] = useState(0);
+  const [imgs, setImgs] = useState<ReactElement[]>([]);
   const numOfImgs = imgSources.length;
 
   const nextImage = () => {
@@ -32,7 +33,9 @@ const ImageSlider: React.FunctionComponent<{ imgSources: Array<string> }> = ({
         <div className="slider__control right" onClick={() => nextImage()}>
           <FontAwesomeIcon icon={faArrowRight} />
         </div>
-        {<img key={imgIndex} src={imgSources[imgIndex]} />}
+        {imgSources.map((item, index) => (
+          <img key={index} src={item} hidden={index !== imgIndex} />
+        ))}
       </div>
       <style jsx>{`
         .slider {
