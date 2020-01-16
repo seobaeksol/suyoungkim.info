@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Header: React.FunctionComponent = () => {
-  const [mobileNavShown, setMobileNavShown] = useState(true);
+  const [mobileNavShown, setMobileNavShown] = useState(false);
 
   return (
-    <>
+    <div className="header__container">
       <header className="container">
         <h3 className="header__title">Suyoung Kim</h3>
 
@@ -37,6 +37,11 @@ const Header: React.FunctionComponent = () => {
       </nav>
 
       <style jsx>{`
+
+        .header__container {
+          margin-bottom: 32px;
+        }
+
         header {
           padding-top: 32px;
           padding-bottom: 24px;
@@ -107,7 +112,7 @@ const Header: React.FunctionComponent = () => {
           }
         }
       `}</style>
-    </>
+    </div>
   );
 };
 
