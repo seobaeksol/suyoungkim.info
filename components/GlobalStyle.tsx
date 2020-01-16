@@ -29,6 +29,15 @@ export default () => (
       margin: 0 auto;
     }
 
+    .main {
+      padding: 0 32px;
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
     @media (max-width: 900px) {
       .container {
         padding: 0 40px;

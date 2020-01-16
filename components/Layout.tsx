@@ -15,7 +15,9 @@ const Layout: React.FunctionComponent<{
       <GlobalStyle />
 
       <Header />
+      <div className="main">
       {children}
+      </div>
       <Footer />
     </div>
   );
