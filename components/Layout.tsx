@@ -16,7 +16,7 @@ const Layout: React.FunctionComponent<{
 
       <Header />
       <div className="main">
-      {children}
+        <div className="main__content">{children}</div>
       </div>
       <Footer />
     </div>

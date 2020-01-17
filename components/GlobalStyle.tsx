@@ -10,6 +10,10 @@ export default () => (
       margin: 0;
     }
 
+    html,
+    body {
+    }
+
     html {
       overflow-y: scroll;
     }
@@ -18,6 +22,7 @@ export default () => (
       font-family: Arial;
       background: black;
       color: #ccc;
+      position: relative;
     }
 
     a {
@@ -30,12 +35,39 @@ export default () => (
     }
 
     .main {
-      padding: 0 32px;
+      position: relative;
+      min-height: 800px;
+    }
+
+    body::after {
+      content: "";
+      position: absolute;
+      background: url("/images/bg_test.jpg");
+      background-size: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      opacity: 1;
+      z-index: -1;
+    }
+
+    .main__content {
+      padding: 32px;
       max-width: 1200px;
-      margin: auto;
+      margin: 0 auto;
       display: flex;
       justify-content: center;
       flex-direction: column;
+    }
+
+    @media (max-width: 1200px) {
+      body::after {
+        background-size: auto 100%;
+      }
     }
 
     @media (max-width: 900px) {

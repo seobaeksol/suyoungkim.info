@@ -37,11 +37,6 @@ const Header: React.FunctionComponent = () => {
       </nav>
 
       <style jsx>{`
-
-        .header__container {
-          margin-bottom: 32px;
-        }
-
         header {
           padding-top: 32px;
           padding-bottom: 24px;
@@ -52,6 +47,18 @@ const Header: React.FunctionComponent = () => {
           flex-direction: column;
           z-index: 2000;
           border-bottom: 1px solid white;
+        }
+
+        header::after {
+          content: "";
+          background-color: black;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          z-index: -1;
+          opacity: 0.6;
         }
 
         nav :global(a):not(:last-child) {
