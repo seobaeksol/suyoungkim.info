@@ -12,6 +12,8 @@ export default () => (
 
     html,
     body {
+      width: 100%;
+      height: 100%;
     }
 
     html {
@@ -42,8 +44,7 @@ export default () => (
     body::after {
       content: "";
       position: absolute;
-      background: url("/images/bg_test.jpg");
-      background-size: 100%;
+      background: url("/images/bg_me.png");
       background-position: center center;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -52,7 +53,7 @@ export default () => (
       bottom: 0;
       top: 0;
       opacity: 1;
-      z-index: -1;
+      z-index: -10;
     }
 
     .main__content {
