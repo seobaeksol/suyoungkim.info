@@ -46,7 +46,6 @@ export default () => (
 
     .main {
       position: relative;
-      min-height: 800px;
     }
 
     body::after {
