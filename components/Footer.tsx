@@ -71,7 +71,7 @@ const Footer: React.FunctionComponent = () => (
 
         .copyright {
           margin-right: 15px;
-          font-size: 1.2rem;
+          font-size: 1.4rem;
           font-family: "Dancing Script", Arial;
         }
 
@@ -83,6 +83,12 @@ const Footer: React.FunctionComponent = () => (
         span {
           margin-right: 10px;
           font-size: 0.8rem;
+        }
+
+        @media (max-width: 1200px) {
+          .copyright {
+            font-size: 1.2rem;
+          }
         }
 
         @media (max-width: 768px) {
