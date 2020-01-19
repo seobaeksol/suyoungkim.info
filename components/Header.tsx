@@ -85,6 +85,8 @@ const Header: React.FunctionComponent = () => {
           header {
             justify-content: space-between;
             flex-direction: row;
+            padding-top: 24px;
+            padding-bottom: 24px;
           }
 
           nav {
@@ -105,6 +107,19 @@ const Header: React.FunctionComponent = () => {
             flex-direction: column;
             align-items: center;
             margin-bottom: 32px;
+            position: relative;
+          }
+
+          .header__mobile-nav::after {
+            content: "";
+            position: absolute;
+            background-color: black;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0.7;
+            z-index: -1;
           }
 
           .header__mobile-nav :global(a) {

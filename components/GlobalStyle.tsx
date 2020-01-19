@@ -84,6 +84,22 @@ export default () => (
       .container {
         padding: 0 40px;
       }
+
+      body::after {
+        content: "";
+        position: absolute;
+        background: url("/images/bg_mobile.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        opacity: 0.5;
+        z-index: -10;
+      }
     }
   `}</style>
 );
