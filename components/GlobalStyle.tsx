@@ -74,17 +74,25 @@ export default () => (
       flex-direction: column;
     }
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1920px) {
       body::after {
-        background-size: auto 100%;
+        content: "";
+        position: absolute;
+        background: url("/images/bg_main_small.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        opacity: 0.5;
+        z-index: -10;
       }
     }
 
-    @media (max-width: 900px) {
-      .container {
-        padding: 0 40px;
-      }
-
+    @media (max-width: 1200px) {
       body::after {
         content: "";
         position: absolute;
@@ -99,6 +107,12 @@ export default () => (
         top: 0;
         opacity: 0.5;
         z-index: -10;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        padding: 0 40px;
       }
     }
   `}</style>
