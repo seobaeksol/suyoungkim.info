@@ -1,16 +1,51 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+
 const Footer: React.FunctionComponent = () => (
   <div className="footer">
-    <h1>Suyoung Kim</h1>
-    <span>suyoung154@gmail.com</span>
-    <span>Facebook</span>
-    <span>Instargram</span>
-    <span>Github</span>
+    <h3 className="copyright">Copyright © 2020 Suyoung Kim</h3>
+    <span>
+      <a
+        href="mailto://suyoung154@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FontAwesomeIcon icon={faEnvelope} size="2x" />
+      </a>
+    </span>
+    <span>
+      <a
+        href="https://www.facebook.com/dev.suyong"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img className="img__brand-logo" src="/images/logo_facebook.png" />
+      </a>
+    </span>
+    <span>
+      <a
+        href="https://www.instagram.com/suyoung_kr/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img className="img__brand-logo" src="/images/logo_instagram.png" />
+      </a>
+    </span>
+    <span>
+      <a
+        href="https://github.com/kimpeupeu"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img className="img__brand-logo" src="/images/logo_github_r.png" />
+      </a>
+    </span>
     <style jsx>
       {`
         .footer {
           width: 100%;
-          height: 120px;
-          color: black;
+          height: 80px;
+          color: #ccc;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -19,14 +54,29 @@ const Footer: React.FunctionComponent = () => (
 
         .footer::after {
           content: "";
-          background-color: #ccc;
+          background-color: black;
           position: absolute;
           top: 0;
           bottom: 0;
           left: 0;
           right: 0;
           z-index: -1;
-          opacity: 0.7;
+          opacity: 1;
+        }
+
+        .copyright {
+          margin-right: 15px;
+          font-size: 1.2rem;
+        }
+
+        .img__brand-logo {
+          width: 25px;
+          height: 25px;
+        }
+
+        span {
+          margin-right: 10px;
+          font-size: 0.8rem;
         }
       `}
     </style>

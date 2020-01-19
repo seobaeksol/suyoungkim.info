@@ -77,6 +77,8 @@ const Header: React.FunctionComponent = () => {
           font-family: "Dancing Script", Arial;
           font-size: 3.4rem;
           padding-bottom: 24px;
+          color: white;
+          text-shadow: 2px 2px black;
         }
 
         @media (max-width: 768px) {

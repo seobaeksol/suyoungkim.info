@@ -11,9 +11,9 @@ export default () => (
     }
 
     html,
-    body {
-      width: 100%;
-      height: 100%;
+    body,
+    #__next,
+    .wrap {
     }
 
     html {
@@ -22,13 +22,21 @@ export default () => (
 
     body {
       font-family: Arial;
-      background: black;
-      color: #ccc;
+      // background: black;
+      // color: #ccc;
       position: relative;
     }
 
     a {
       text-decoration: none;
+      color: #ccc;
+    }
+
+    .wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100vh;
     }
 
     .container {
@@ -44,7 +52,8 @@ export default () => (
     body::after {
       content: "";
       position: absolute;
-      background: url("/images/bg_me.png");
+      background: url("/images/bg_main.png");
+      background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -52,7 +61,7 @@ export default () => (
       right: 0;
       bottom: 0;
       top: 0;
-      opacity: 1;
+      opacity: 0.5;
       z-index: -10;
     }
 

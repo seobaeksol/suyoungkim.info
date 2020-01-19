@@ -20,27 +20,6 @@ const Projects: React.FunctionComponent = () => (
       vel fringilla est ullamcorper eget nulla facilisi. Adipiscing elit
       pellentesque habitant morbi tristique senectus et. Facilisis volutpat est
       velit egestas dui id ornare arcu odio. Ante in nibh mauris cursus. Sed
-      egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.
-      Magna fringilla urna porttitor rhoncus. Consequat ac felis donec et odio
-      pellentesque diam. Eget felis eget nunc lobortis mattis. Erat imperdiet
-      sed euismod nisi porta lorem mollis aliquam ut. Ornare arcu dui vivamus
-      arcu felis bibendum. Semper viverra nam libero justo laoreet sit amet.
-      Euismod elementum nisi quis eleifend quam adipiscing. Nibh tellus molestie
-      nunc non blandit. Ut lectus arcu bibendum at. Nam libero justo laoreet sit
-      amet cursus. Facilisis magna etiam tempor orci eu lobortis elementum.
-      Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Nunc
-      sed velit dignissim sodales ut eu sem integer. Elementum integer enim
-      neque volutpat ac. Arcu non sodales neque sodales ut etiam sit. Tincidunt
-      vitae semper quis lectus. Vestibulum mattis ullamcorper velit sed
-      ullamcorper morbi tincidunt ornare. Et tortor consequat id porta nibh.
-      Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Nibh sit
-      amet commodo nulla facilisi nullam vehicula ipsum a. Nibh tortor id
-      aliquet lectus proin nibh nisl condimentum. Sed enim ut sem viverra.
-      Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim.
-      Sed vulputate mi sit amet mauris commodo quis imperdiet massa. Montes
-      nascetur ridiculus mus mauris. Consectetur purus ut faucibus pulvinar
-      elementum. Tristique senectus et netus et malesuada fames ac turpis.
-      Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt.
       Adipiscing enim eu turpis egestas pretium. In iaculis nunc sed augue lacus
       viverra vitae. Laoreet id donec ultrices tincidunt arcu non. Sed risus
       pretium quam vulputate dignissim suspendisse in. Morbi tristique senectus

@@ -7,7 +7,7 @@ const Layout: React.FunctionComponent<{
   title?: String;
 }> = ({ children, title }) => {
   return (
-    <div>
+    <div className="wrap">
       <Head>
         <title>{title ? `${title} | ` : ""}Suyoung Kim</title>
       </Head>
