@@ -6,7 +6,6 @@ const ImageSlider: React.FunctionComponent<{ imgSources: Array<string> }> = ({
   imgSources
 }) => {
   const [imgIndex, setImgIndex] = useState(0);
-  const [imgs, setImgs] = useState<ReactElement[]>([]);
   const numOfImgs = imgSources.length;
 
   const nextImage = () => {
@@ -42,6 +41,7 @@ const ImageSlider: React.FunctionComponent<{ imgSources: Array<string> }> = ({
           display: flex;
           justify-content: center;
           position: relative;
+          align-items: center;
         }
 
         .image__holder {
@@ -81,7 +81,13 @@ const ImageSlider: React.FunctionComponent<{ imgSources: Array<string> }> = ({
         }
 
         img {
-          height: 600px;
+          height: 650px;
+        }
+
+        @media (max-width: 1200px) {
+          img {
+            height: 400px;
+          }
         }
 
         @media (max-width: 900px) {
