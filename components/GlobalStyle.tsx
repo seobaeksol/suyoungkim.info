@@ -5,6 +5,11 @@ export default () => (
       src: url("/fonts/DancingScript-Regular.ttf");
     }
 
+    @font-face {
+      font-family: "CookieRun";
+      src: url("/fonts/CookieRun-Regular.ttf");
+    }
+
     * {
       padding: 0;
       margin: 0;
@@ -45,7 +50,12 @@ export default () => (
     }
 
     .main {
+      padding: 32px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
       position: relative;
+      flex: 1;
     }
 
     body::after {
@@ -62,15 +72,6 @@ export default () => (
       top: 0;
       opacity: 0.5;
       z-index: -10;
-    }
-
-    .main__content {
-      padding: 32px;
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
     }
 
     @media (max-width: 1920px) {
