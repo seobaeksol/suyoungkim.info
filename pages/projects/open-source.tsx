@@ -1,6 +1,6 @@
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 
-const Projects: React.FunctionComponent = () => (
+const OpenSource: React.FunctionComponent = () => (
   <Layout title="Projects">
     <div>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -145,4 +145,4 @@ const Projects: React.FunctionComponent = () => (
   </Layout>
 );
 
-export default Projects;
+export default OpenSource;
