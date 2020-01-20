@@ -22,6 +22,10 @@ class MyDocument extends Document {
         <Head>
           <meta property="og:image" content={osImageContent} />
           <meta property="og:title" content="Suyoung Kim" />
+          <meta
+            property="og:description"
+            content="A programmer who want world to be better"
+          />
         </Head>
         <body>
           <Main />
