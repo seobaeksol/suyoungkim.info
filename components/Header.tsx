@@ -106,7 +106,6 @@ const Header: React.FunctionComponent = () => {
             display: ${mobileNavShown ? "flex" : "none"};
             flex-direction: column;
             align-items: center;
-            margin-bottom: 32px;
             position: relative;
           }
 
@@ -118,7 +117,7 @@ const Header: React.FunctionComponent = () => {
             left: 0;
             bottom: 0;
             right: 0;
-            opacity: 0.7;
+            opacity: 0.8;
             z-index: -1;
           }
 

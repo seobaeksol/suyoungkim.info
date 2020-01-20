@@ -88,6 +88,7 @@ const Footer: React.FunctionComponent = () => (
 
           .copyright {
             font-size: 1.2rem;
+            margin-right: 0px;
           }
         }
       `}
