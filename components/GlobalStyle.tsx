@@ -32,6 +32,17 @@ export default () => (
       position: relative;
     }
 
+    .html__background {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background-image: url("/images/bg_main.png");
+      background-position: center;
+      background-size: cover;
+      z-index: -1;
+      opacity: 0.5;
+    }
+
     a {
       text-decoration: none;
       color: #ccc;
@@ -58,30 +69,14 @@ export default () => (
       flex: 1;
     }
 
-    body::after {
-      content: "";
-      position: absolute;
-      background-image: url("/images/bg_main.png");
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      top: 0;
-      opacity: 0.5;
-      z-index: -10;
-    }
-
     @media (max-width: 1920px) {
-      body::after {
+      .html__background {
         background-image: url("/images/bg_main_small.png");
       }
     }
 
     @media (max-width: 1200px) {
-      body::after {
+      .html__background {
         background-image: url("/images/bg_mobile.png");
       }
     }

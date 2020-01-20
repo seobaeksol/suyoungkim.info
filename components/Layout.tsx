@@ -8,6 +8,7 @@ const Layout: React.FunctionComponent<{
 }> = ({ children, title }) => {
   return (
     <div className="wrap">
+      <div className="html__background"></div>
       <Head>
         <title>{title ? `${title} | ` : ""}Suyoung Kim</title>
       </Head>
