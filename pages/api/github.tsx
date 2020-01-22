@@ -16,11 +16,17 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     body: JSON.stringify({
       query: `{
       user(login: "kimpeupeu") {
-        repositories(first: 10, isFork: false, isLocked: false) {
+        repositories(first: 9, isFork: false, isLocked: false) {
           nodes {
             name
             description
             url
+          }
+          pageInfo {
+            endCursor
+            hasNextPage
+            hasPreviousPage
+            startCursor
           }
         }
       }
@@ -31,9 +37,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   });
 
   const data = await githubRes.json();
+  const repositories = data.data.user.repositories;
 
-  console.log(JSON.stringify(data));
-  console.log(data.data.user.repositories.nodes);
-
-  res.status(200).json(data.data.user.repositories.nodes || []);
+  res.status(200).json(repositories || []);
 };
